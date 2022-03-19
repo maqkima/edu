@@ -1,0 +1,4 @@
+.idea
+educa/db.sqlite3
+educa/educa/settings/local.py
+educa/config
