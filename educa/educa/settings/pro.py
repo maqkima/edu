@@ -3,7 +3,7 @@ from .base import *
 DEBUG = False
 
 ADMINS = (
-    ('admin', 'email@mydomain.com'),
+    config('ADMIN_NAME', 'ADMIN_EMAIL'),
 )
 
 SECURE_SSL_REDIRECT = True
@@ -16,8 +16,8 @@ ALLOWED_HOSTS = ['educaproject.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'educa',
-        'USER': 'educa',
-        'PASSWORD': '456',
+        'NAME': config('DATABASES_NAME'),
+        'USER': config('DATABASES_USER'),
+        'PASSWORD': config('DATABASES_PASSWORD'),
     }
 }

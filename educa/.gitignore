@@ -1,0 +1,4 @@
+db.sqlite3
+educa/settings/local.py
+educa/settings/settings.ini
+config
